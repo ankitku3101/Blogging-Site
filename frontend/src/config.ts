@@ -1,0 +1,1 @@
+export const BACKEND_URL = "https://medium.ankit-ku3101.workers.dev"
