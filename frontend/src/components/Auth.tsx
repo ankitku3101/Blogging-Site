@@ -33,7 +33,7 @@ export const Auth = ({type}: {type: "signup" | "signin"}) => {
             <div>
                 <div className="px-10">
                     <div className="text-3xl font-extrabold">
-                        Create an account
+                    {type === "signin" ? "Login into account" : "Create an account?" }
                     </div>
                     <div className="text-slate-500">
                         {type === "signin" ? "Don't have an account?" : "Already have an account?" }
@@ -49,7 +49,7 @@ export const Auth = ({type}: {type: "signup" | "signin"}) => {
                             name: e.target.value
                         })
                     }} /> : null } 
-                    <LabelledInput label="Username" placeholder="johndoe@gmail.com" onChange={(e) => {
+                    <LabelledInput label="Email" placeholder="johndoe@gmail.com" onChange={(e) => {
                         setPostInputs({
                             ...postInputs,
                             username: e.target.value
