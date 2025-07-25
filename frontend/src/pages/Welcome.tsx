@@ -7,7 +7,7 @@ export const Welcome = () => {
                 welcome to
             </div>
             <div className="flex justify-center text-8xl font-extrabold">
-                medium
+                scribly
             </div>
             <div className="flex justify-center pt-6">
                 <Link to={'/signin'}>
